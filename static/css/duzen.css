@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c949d45;
+    margin: 0;rgba(55, 225, 240, 0.271)
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Poppins;
+    color: #ffffff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: rgb(0, 0, 0);;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.message {
+    color: #ff0000;
+    font-weight: bold;
+}
+.message {
+    color: white; /* Mesajın rengini beyaz yapar */
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../static/css/duzen.css') }}">
+    <title>Rastgele Arapça Harf</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Rastgele Arapça Harf:</h1>
+    <img src="{{ url_for('static', filename=filename) }}" alt="Rastgele Arapça Harf">
+    
+    <form method="POST" action="/">
+        <label for="answer">Yukarıdaki harf hangisidir?</label><br>
+        <input type="text" id="answer" name="answer">
+        <input type="hidden" name="arabic_letter" value="{{ arabic_letter }}">
+        <input type="submit" value="Gönder">
+    </form>
+    
+
+    <!-- Doğru veya yanlış mesajını ekrana yazdır -->
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
